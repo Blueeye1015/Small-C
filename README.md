@@ -1,6 +1,6 @@
 # Small-C
 
-For Mr.Xia & Xueza
+Gift For Mr.Xia & Xueza
 
 * <program>∷={<declaration_list><statement_list>}
 * <declaration_list>∷=<declaration_list><declaration_stat>|<declaration_list>|ε
