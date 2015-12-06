@@ -2,7 +2,7 @@
 	#include <stdio.h>
 	#include "string.h"
 	#include "malloc.h"
-	#include "cx.tab.h"
+	#include "smallc.tab.h"
 	int line=0;
 	void yyerror(char *);
 	int yywrap(void);
@@ -54,12 +54,12 @@
 <INITIAL>([0-9]|[1-9][0-9]+)	 		 {
 	yylval.number=atoi(yytext);
 	return SYM_number;
-}	
+}
 <INITIAL>([0-9]*[a-zA-Z]*[0-9]*) {
 	yylval.ident=(char *)malloc(strlen(yytext)+1);
 	strcpy(yylval.ident,yytext);
 	return SYM_ident;
-}	
+}
 [ \t] 							 {;}
 . {
 	yyerror("unknown character");

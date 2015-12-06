@@ -17,13 +17,13 @@ int number;
 %token <number> SYM_number
 %token <ident>	SYM_ident
 
-%nonassoc IFX 
+%nonassoc IFX
 %nonassoc SYM_else
 
 //--------------------------------------------------rules--------------------------------------------------
 %%
 program:
-	{lev--;} 
+	{lev--;}
 	block
 	;
 

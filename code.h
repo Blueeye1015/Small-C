@@ -73,7 +73,7 @@ int base(int l,int b,int s[STACKSIZE])
 void stack(){
 	int fl=10;
 	printf("--------------STACK---------------\n");
-	while(fl){				
+	while(fl){
 		printf("[%d] %d\n", fl, s[fl]);
 		fl--;
 	}
@@ -87,7 +87,8 @@ void interpret()
 	int fl;
 	struct instruction i;
 
-	printf("********Start Cx Language*********\n");
+	printf("\n-------------------------\n");
+	printf("Start Small C:\n");
  	t=0; //栈顶指针
 	s[0]=0;
 	s[1]=0;
@@ -297,6 +298,6 @@ void interpret()
 				break;
 			}
 		}while(p!=cx);
-		printf("\n******End PL/0********\n");
+		printf("\n-------------------------\n");
 		//fclose(fa2);
 }

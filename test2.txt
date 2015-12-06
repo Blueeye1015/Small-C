@@ -11,7 +11,7 @@
 	d=19;
 	e=43;
         write (a+b)-d;
-        a=(b+(d-e))-(e/b+a); 
+        a=(b+(d-e))-(e/b+a);
 	write a;
 	b=d/(d/(d/b));
 	write b;

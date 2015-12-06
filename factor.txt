@@ -1,27 +1,14 @@
+/*
+	计算阶乘
+*/
 {
-	
 int N;
-	
-while(true)
-	
-{
-		
 int ans;
-		
 ans = 1;
-		
 read N;
-		
 while(N){
-			
 ans = ans * N;
-			
 N = N - 1;
-		
 };
-		
 write ans;
-	
-};
-
 }
